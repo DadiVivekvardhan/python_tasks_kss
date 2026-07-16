@@ -1,0 +1,5 @@
+#Q. Write a program to access the third element in a list.
+
+numbers = [10, 20, 30, 40, 50]
+
+print("Third element:", numbers[2])
