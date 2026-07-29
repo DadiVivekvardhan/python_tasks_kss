@@ -1,0 +1,14 @@
+1. Student Attendance Record
+A teacher wants to store student attendance in a file named attendance.txt. Write a
+Python program that takes a student name as input and appends it to the file. Then
+display the contents of the file.
+
+2. Notes Reader Program
+A student stores daily notes in a file called notes.txt. Write a program that opens the
+file, reads all the contents, and displays them on the screen.
+
+
+3. Grocery List Manager
+A user wants to save grocery items in a file grocery.txt. Write a Python program that
+takes multiple items from the user and writes them into the file, with each item on a
+new line.
