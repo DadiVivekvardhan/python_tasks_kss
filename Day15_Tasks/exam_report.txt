@@ -1,0 +1,11 @@
+Student Exam Report
+===================
+    Name  Marks Grade
+0  Vivek     77     C
+1  Rahul     47     F
+2    Anu     10     F
+3  Kiran     28     F
+4   Ravi     44     F
+
+Average Marks: 41.2
+Standard Deviation: 22.22970984965841

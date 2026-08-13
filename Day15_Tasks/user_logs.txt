@@ -1,0 +1,6 @@
+log in
+find friends
+news
+login
+logout
+e

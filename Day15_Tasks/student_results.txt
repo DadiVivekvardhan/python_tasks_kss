@@ -1,0 +1,6 @@
+Students scoring above 50:
+Anu: 75
+Vivek: 60
+Kiran: 85
+
+Average marks: 61.0

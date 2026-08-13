@@ -1,0 +1,7 @@
+INFO: Application started
+ERROR: Database connection failed
+INFO: User logged in
+ERROR: File not found
+ERROR: Database connection failed
+INFO: Application stopped
+ERROR: File not found
