@@ -193,7 +193,8 @@ top_5_bedrooms = bedroom_counts.head(5)
 
 # 3. Prepare: Labels and Values
 # Converting index to string labels and values to a list
-labels = [f"{int(b)} Bedrooms" for b in top_5_bedrooms.index]
+labels = [f"{int(b)} Bedrooms"
+          for b in top_5_bedrooms.index]
 values = top_5_bedrooms.values
 
 # 4. Plot a pie chart
