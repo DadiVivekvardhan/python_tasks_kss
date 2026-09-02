@@ -1,0 +1,96 @@
+FASTAPI TODO PROJECT - COMMANDS TO REMEMBER
+================================================
+
+1. Open the project folder
+cd "C:\Users\DELL\OneDrive\Documents\Python Tasks\todo_fastapi"
+
+2. Check the files
+dir
+
+3. Open main.py in Notepad
+notepad main.py
+
+4. Check Python syntax
+python -m py_compile main.py
+
+5. Create tasks.json as a FILE
+echo [] > tasks.json
+
+IMPORTANT:
+Do NOT use: mkdir tasks.json
+tasks.json must be a FILE, not a folder.
+
+6. Check tasks.json
+type tasks.json
+
+7. Start FastAPI
+python -m uvicorn main:app --reload
+
+Keep this Command Prompt open while using Swagger.
+
+8. Open Swagger UI
+http://127.0.0.1:8000/docs
+
+9. Stop FastAPI
+CTRL + C
+
+
+================================================
+SWAGGER TODO OPERATIONS
+================================================
+
+CREATE TASK
+POST /tasks
+
+Example:
+{
+  "title": "Learn FastAPI",
+  "description": "Understand APIs and FastAPI"
+}
+
+
+FETCH ALL TASKS
+GET /tasks
+
+No request body required.
+
+
+UPDATE TASK STATUS
+PUT /tasks/{task_id}
+
+task_id:
+1
+
+Request body:
+{
+  "status": "in progress"
+}
+
+Available statuses:
+- not yet started
+- in progress
+- completed
+
+
+DELETE TASK
+DELETE /tasks/{task_id}
+
+task_id:
+1
+
+
+================================================
+COMPLETE FLOW
+================================================
+
+1. Open Command Prompt
+2. Go to todo_fastapi
+3. Run: dir
+4. Run: notepad main.py
+5. Save main.py
+6. Run: python -m py_compile main.py
+7. Run: echo [] > tasks.json
+8. Run: type tasks.json
+9. Run: python -m uvicorn main:app --reload
+10. Open: http://127.0.0.1:8000/docs
+11. Test POST -> GET -> PUT -> DELETE
