@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Student Management</h1>
+            <p>Manage student information easily</p>
+        </header>
+
+        <!-- Student Form -->
+        <section class="form-section">
+
+            <h2 id="form-title">Add New Student</h2>
+
+            <form id="student-form">
+
+                <input type="hidden" id="student-id">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="name">Student Name</label>
+                        <input type="text" id="name" placeholder="Enter student name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="Enter phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Course</label>
+                        <select id="course" required>
+                            <option value="">Select course</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="B.Sc">B.Sc</option>
+                            <option value="B.Com">B.Com</option>
+                            <option value="BBA">BBA</option>
+                            <option value="M.Tech">M.Tech</option>
+                            <option value="MBA">MBA</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select id="department" required>
+                            <option value="">Select department</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Mechanical">Mechanical</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Commerce">Commerce</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <select id="year" required>
+                            <option value="">Select year</option>
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                            <option value="4th Year">4th Year</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" id="submit-button">
+                        Add Student
+                    </button>
+
+                    <button type="button" id="cancel-button" onclick="cancelEdit()">
+                        Cancel
+                    </button>
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- Student List -->
+        <section class="students-section">
+
+            <div class="section-header">
+                <h2>Students</h2>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search students..."
+                    onkeyup="searchStudents()">
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Course</th>
+                            <th>Department</th>
+                            <th>Year</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="student-table-body">
+                    </tbody>
+
+                </table>
+
+                <div id="empty-message">
+                    No students available.
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
